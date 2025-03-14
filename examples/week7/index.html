@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS 練習</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+
 
     <!-- 
     步驟一：引入 Tailwind CSS
@@ -18,11 +20,11 @@
   </head>
   <body>
     <!-- 導航列 -->
-    <nav>
-      <div>
-        <img src="https://placehold.jp/100x50.png" alt="Logo" />
-        <ul>
-          <li><a href="#">首頁</a></li>
+    <nav class="container mx-auto p-4 border-b border-gray-500">
+      <div class="flex justify-between items-center">
+        <img src="https://placehold.jp/100x50.png" alt="Logo" /> <!-- alt 無障礙:是提供給盲人等身障人士透過軟件能知道這是在幹嘛的 --> 
+        <ul class="flex gap-x-3">
+          <li><a class="font-bold text -underline pb-2" href="#">首頁</a></li>
           <li><a href="#">關於我們</a></li>
           <li><a href="#">服務項目</a></li>
           <li><a href="#">聯絡資訊</a></li>
@@ -199,9 +201,9 @@
        - 設計圖示的樣式
 
     4. 產品展示區
-       - 製作響應式的卡片布局
+- 製作響應式的卡片布局
        - 設計圖片的顯示方式
-       - 加入互動效果（hover）
+       - 加入互動效果（hover）       
 
     5. 用戶見證區
        - 設計引述樣式
